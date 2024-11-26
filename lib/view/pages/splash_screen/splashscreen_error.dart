@@ -23,6 +23,7 @@ class SplashscreenError extends StatelessWidget {
           const Text(
             'Algo de errado aconteceu. Tente novamente!',
             style: TextStyle(
+              fontFamily: 'Helvetica',
               color: AppColors.white,
             ),
           ),

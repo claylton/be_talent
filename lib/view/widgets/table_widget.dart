@@ -58,7 +58,11 @@ class _Header extends StatelessWidget {
               padding: EdgeInsets.only(left: 16),
               child: Text(
                 "Foto",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Helvetica',
+                ),
               ),
             ),
           ),
@@ -67,7 +71,11 @@ class _Header extends StatelessWidget {
             children: [
               Text(
                 "Nome",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.w500,
+                  fontFamily: 'Helvetica',
+                ),
               ),
             ],
           )),
@@ -153,7 +161,10 @@ class _ItemState extends State<_Item> {
                       Text(
                         widget.employee.name,
                         style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w400),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: 'Helvetica',
+                        ),
                       ),
                     ],
                   ),
@@ -167,9 +178,7 @@ class _ItemState extends State<_Item> {
                       height: 40,
                       child: Center(
                         child: Icon(
-                          isOpen
-                              ? Icons.keyboard_arrow_up_sharp
-                              : Icons.keyboard_arrow_down_sharp,
+                          isOpen ? Icons.keyboard_arrow_up_sharp : Icons.keyboard_arrow_down_sharp,
                           size: 32,
                           color: AppColors.bluePrimary,
                         ),
@@ -194,8 +203,7 @@ class _ItemState extends State<_Item> {
                 const SizedBox(height: 15),
                 _ItemExpandedItem(
                   leftText: "Data de admissão",
-                  rightText: DateFormat('dd/MM/yyyy')
-                      .format(widget.employee.admissionDate),
+                  rightText: DateFormat('dd/MM/yyyy').format(widget.employee.admissionDate),
                 ),
                 const SizedBox(height: 15),
                 _ItemExpandedItem(
@@ -229,6 +237,7 @@ class _ItemExpandedItem extends StatelessWidget {
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
                 color: AppColors.black,
+                fontFamily: 'Helvetica',
               ),
             ),
             Text(
@@ -237,6 +246,7 @@ class _ItemExpandedItem extends StatelessWidget {
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
                 color: AppColors.black,
+                fontFamily: 'Helvetica',
               ),
             ),
           ],

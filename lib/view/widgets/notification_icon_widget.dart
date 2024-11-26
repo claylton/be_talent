@@ -28,6 +28,7 @@ class NotificationIconWidget extends StatelessWidget {
                 child: Text(
                   number.toString(),
                   style: const TextStyle(
+                    fontFamily: 'Helvetica',
                     color: AppColors.white,
                     fontSize: 10,
                     fontWeight: FontWeight.w700,

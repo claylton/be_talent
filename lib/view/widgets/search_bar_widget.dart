@@ -24,6 +24,7 @@ class SearchBarWidget extends StatelessWidget {
           child: Text(
             'Funcionários',
             style: TextStyle(
+              fontFamily: 'Helvetica',
               fontSize: 20,
               fontWeight: FontWeight.w500,
             ),
