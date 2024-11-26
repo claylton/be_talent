@@ -1,11 +1,11 @@
 # be_talent_test_dev
 
 <p align="center">
-  <img alt="Demo on Android and iOS" src="https://github.com/claylton/yandeh_teste_dev/blob/main/docs/readme_images/mobile.png">
+  <img alt="Mobile_1" src="https://github.com/claylton/be_talent/blob/main/docs/readme_images/mobile_1.jpeg">
 </p>
 
 <p align="center">
-  <img alt="Demo on Android and iOS" src="https://github.com/claylton/yandeh_teste_dev/blob/main/docs/readme_images/web.png">
+  <img alt="Mobile_2" src="https://github.com/claylton/be_talent/blob/main/docs/readme_images/mobile_2.jpeg">
 </p>
 
 ---
