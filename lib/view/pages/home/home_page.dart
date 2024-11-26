@@ -30,7 +30,12 @@ class _HomePageState extends State<HomePage> {
         employeesFiltered = widget.employees;
       } else {
         employeesFiltered = widget.employees.where((employee) {
-          return employee.name.toLowerCase().contains(text.toLowerCase());
+          var byName = employee.name.toLowerCase().contains(text.toLowerCase());
+          var byPhone =
+              employee.phone.toLowerCase().contains(text.toLowerCase());
+          var byJob = employee.job.toLowerCase().contains(text.toLowerCase());
+
+          return byJob || byPhone || byName;
         }).toList();
       }
     });
