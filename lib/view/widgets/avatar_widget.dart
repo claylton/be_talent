@@ -27,6 +27,7 @@ class AvatarTextWidget extends StatelessWidget {
         text,
         style: const TextStyle(
           fontFamily: 'Helvetica',
+          color: AppColors.black,
           fontSize: 16,
           fontWeight: FontWeight.w400,
         ),
