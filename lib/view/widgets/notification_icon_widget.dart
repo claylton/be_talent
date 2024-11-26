@@ -1,5 +1,5 @@
-import 'package:be_talent/view/resources/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class NotificationIconWidget extends StatelessWidget {
   final int number;
@@ -12,31 +12,11 @@ class NotificationIconWidget extends StatelessWidget {
       height: 37,
       child: Stack(
         children: [
-          const Icon(
-            Icons.notifications_none_outlined,
-            size: 32,
+          SvgPicture.asset(
+            'assets/icons/bell-notification.svg', // Caminho para o seu arquivo SVG
+            width: 32,
+            height: 32,
           ),
-          Align(
-            alignment: Alignment.topRight,
-            child: Container(
-              decoration: const BoxDecoration(
-                color: AppColors.bluePrimary,
-                shape: BoxShape.circle,
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(6.0),
-                child: Text(
-                  number.toString(),
-                  style: const TextStyle(
-                    fontFamily: 'Helvetica',
-                    color: AppColors.white,
-                    fontSize: 10,
-                    fontWeight: FontWeight.w700,
-                  ),
-                ),
-              ),
-            ),
-          )
         ],
       ),
     );
