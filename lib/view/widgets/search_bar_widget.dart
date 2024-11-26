@@ -41,11 +41,16 @@ class SearchBarWidget extends StatelessWidget {
                 child: Icon(
                   Icons.search,
                   size: 24,
+                  color: AppColors.black,
                 ),
               ),
-              hintText: 'Search...',
-              hintStyle:
-                  const TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+              hintText: 'Pesquisar',
+              hintStyle: const TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w400,
+                color: AppColors.black,
+                fontFamily: 'Helvetica'
+              ),
               filled: true,
               fillColor: AppColors.gray05,
               contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
